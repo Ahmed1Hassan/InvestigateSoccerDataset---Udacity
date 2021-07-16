@@ -17,8 +17,8 @@
 # > Welcome to Soccer Data Analysis Project, in this project, we will analyze European Soccer Database (made by Hugo Mathien). This soccer database comes from Kaggle and is well suited for data analysis and machine learning. It contains data for soccer matches, players, and teams from several European countries from 2008 to 2016.
 # 
 # >### Data Analysis is performed to answer the following questions:
-# (1) What teams improved the most over the time period?\
-# (2) Which players had the most penalties?\
+# (1) What teams improved the most over the time period? \
+# (2) Which players had the most penalties? \
 # (3) What team attributes lead to the most victories?
 # 
 # >N.B. The database is stored in a SQLite database. To access the database files, use software like DB Browser.
@@ -258,7 +258,7 @@ df_player_data=pd.merge(df_player_attributes, df_player, on=['player_api_id', 'p
 
 # #### Team Table: Drop 'team_fifa_api_id' Column
 
-# In[55]:
+# In[29]:
 
 
 # Drop team_fifa_api_id column out of Team Table
@@ -508,7 +508,7 @@ conn.close()
 # ## Conclusions
 # 
 # ### Limitations
-# > (1) Missing Data (E.x: BuildUpDribbling Column has NaN values over 66% of its data)\
+# > (1) Missing Data (E.x: BuildUpDribbling Column has NaN values over 66% of its data) \
 # > (2) Insufficient Data for better calculation results
 # 
 # ### Final Answers 
@@ -517,9 +517,14 @@ conn.close()
 # #### (2) Which Player has The Most Penalties?
 #    > Rickie Lambert
 # #### (3) Which Team Attributes Lead To Most Victories?
-#    > 1. Defence Pressure \
-#    > 2. Defence Aggression \
+#    > 1. Defence Pressure
+#    > 2. Defence Aggression
 #    > 3. Chance Creation Shooting
+
+# ## Acknowledgements
+# >- Udacity's Data Analysis Nanodegree Program
+# >- Python & Pandas Documentation
+# >- StackOverFlow Website
 
 # In[ ]:
 
